@@ -19,7 +19,6 @@
     "nodemon": "^3.1.10"
   },
   "devDependencies": {
-    "daisyui": "^5.1.10",
-    "tailwindcss": "^3.4.17"
+    "daisyui": "^5.1.10"
   }
 }

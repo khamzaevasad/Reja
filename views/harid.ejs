@@ -1,48 +1,40 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style.css" />
     <title>Plan</title>
-    <link rel="stylesheet" href="/src/output.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css"
-      rel="stylesheet"
-    />
   </head>
   <body>
-    <main class="min-h-screen">
-      <section class="align-elements flex items-center justify-center flex-col">
-        <h1 class="text-center text-2xl font-bold py-6">EJS framework</h1>
+    <main>
+      <section class="align-elements">
+        <div class="container">
+          <h1>EJS Framework</h1>
 
-        <div class="card w-full max-w-md bg-base-100 shadow-xl">
-          <div class="card-body">
-            <form
-              id="create-form"
-              action="/create-item"
-              method="POST"
-              class="space-y-4"
-            >
-              <div class="form-control">
-                <label class="label">
-                  <span class="label-text">product name</span>
-                </label>
-                <input
-                  id="create-file"
-                  name="item"
-                  autocomplete="off"
-                  type="text"
-                  placeholder="ex: apple.."
-                  class="input input-bordered input-primary w-full"
-                  required
-                />
-              </div>
+          <div class="card">
+            <div class="card-body">
+              <form id="create-form" action="/create-item" method="POST">
+                <div class="form-control">
+                  <label class="label">
+                    <span class="label-text">Product Name</span>
+                  </label>
+                  <input
+                    id="create-file"
+                    name="item"
+                    autocomplete="off"
+                    type="text"
+                    placeholder="ex: apple..."
+                    class="input input-primary"
+                    required
+                  />
+                </div>
 
-              <div class="form-control mt-6">
-                <button type="submit" class="btn btn-primary">Submit</button>
-              </div>
-            </form>
+                <div class="form-control">
+                  <button type="submit" class="btn btn-primary">Submit</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
