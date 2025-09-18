@@ -24,6 +24,12 @@ app.get("/", function (req, res) {
   res.render("harid");
 });
 
+// Author page
+
+app.get("/author", function (req, res) {
+  res.render("author");
+});
+
 const server = http.createServer(app);
 let PORT = 3200;
 
