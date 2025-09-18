@@ -35,10 +35,10 @@
 
 ### Backend Technologies
 
-- **[Node.js](https://nodejs.org/)** - JavaScript runtime muhiti
-- **[Express.js](https://expressjs.com/)** - Web framework
-- **[MongoDB](https://mongodb.com/)** - NoSQL ma'lumotlar bazasi
-- **[EJS](https://ejs.co/)** - Template engine
+- **[Node.js](https://nodejs.org/)** - JavaScript runtime environment  
+- **[Express.js](https://expressjs.com/)** - Web framework  
+- **[MongoDB](https://mongodb.com/)** - NoSQL database  
+- **[EJS](https://ejs.co/)** - Template engine  
 
 ### Frontend & Styling
 
