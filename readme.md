@@ -118,5 +118,5 @@ To contribute to this project:
 
 <div align="center">
   <p>Made with  by KhamzaevAsad</p>
-  <p>© 2025 Steve Portfolio. All rights reserved.</p>
+  <p>© All rights reserved.</p>
 </div>
