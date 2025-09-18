@@ -7,15 +7,15 @@
     <title>Author</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container main-container">
       <!-- Left Sidebar -->
       <aside class="sidebar">
         <div class="profile-section">
           <div class="profile-avatar">
             <!-- Comment: Profile rasm shu yerga qo'shiladi -->
           </div>
-          <h3 class="profile-name">Marcos</h3>
-          <p class="profile-specialty">Heart</p>
+          <h3 class="profile-name"><%=user.name%></h3>
+          <p class="profile-specialty"><%=user.profession%></p>
 
           <div class="social-icons">
             <div class="social-icon"><!-- Comment: Facebook icon --></div>
@@ -29,19 +29,19 @@
 
         <div class="info-grid">
           <span class="info-label">Age:</span>
-          <span class="info-value">24</span>
+          <span class="info-value"><%=user.age%></span>
           <span class="info-label">Residence:</span>
-          <span class="info-value">BD</span>
+          <span class="info-value"><%=user.residence%></span>
           <span class="info-label">Freelance:</span>
           <span class="info-value" style="color: #28a745">Available</span>
           <span class="info-label">Address:</span>
-          <span class="info-value">Dhaka,Bangladesh</span>
+          <span class="info-value"><%=user.address%></span>
         </div>
 
         <div class="skills-list">
           <h4 class="section-title">Languages</h4>
           <div class="skill-item">
-            <span class="skill-name">Bangla</span>
+            <span class="skill-name"><%=user.languages[0]%></span>
             <span class="skill-percentage">100%</span>
           </div>
           <div class="skill-bar">
@@ -49,7 +49,7 @@
           </div>
 
           <div class="skill-item">
-            <span class="skill-name">English</span>
+            <span class="skill-name"><%=user.languages[1]%></span>
             <span class="skill-percentage">80%</span>
           </div>
           <div class="skill-bar">
@@ -57,7 +57,7 @@
           </div>
 
           <div class="skill-item">
-            <span class="skill-name">Spanish</span>
+            <span class="skill-name"><%=user.languages[2]%></span>
             <span class="skill-percentage">60%</span>
           </div>
           <div class="skill-bar">
@@ -68,7 +68,7 @@
         <div class="skills-list">
           <h4 class="section-title">Skills</h4>
           <div class="skill-item">
-            <span class="skill-name">Html</span>
+            <span class="skill-name"><%=user.skills[0]%></span>
             <span class="skill-percentage">90%</span>
           </div>
           <div class="skill-bar">
@@ -76,7 +76,7 @@
           </div>
 
           <div class="skill-item">
-            <span class="skill-name">CSS</span>
+            <span class="skill-name"><%=user.skills[1]%></span>
             <span class="skill-percentage">85%</span>
           </div>
           <div class="skill-bar">
@@ -84,7 +84,7 @@
           </div>
 
           <div class="skill-item">
-            <span class="skill-name">Js</span>
+            <span class="skill-name"><%=user.skills[2]%></span>
             <span class="skill-percentage">80%</span>
           </div>
           <div class="skill-bar">
@@ -92,7 +92,7 @@
           </div>
 
           <div class="skill-item">
-            <span class="skill-name">PHP</span>
+            <span class="skill-name"><%=user.skills[3]%></span>
             <span class="skill-percentage">75%</span>
           </div>
           <div class="skill-bar">
@@ -100,7 +100,7 @@
           </div>
 
           <div class="skill-item">
-            <span class="skill-name">WordPress</span>
+            <span class="skill-name"><%=user.skills[4]%></span>
             <span class="skill-percentage">85%</span>
           </div>
           <div class="skill-bar">
@@ -111,10 +111,10 @@
         <div>
           <h4 class="section-title">Extra Skills</h4>
           <ul class="extra-skills">
-            <li class="extra-skill">Bootstrap, Materialize</li>
-            <li class="extra-skill">Stylus, Sass, Less</li>
-            <li class="extra-skill">Gulp, Webpack, Grunt</li>
-            <li class="extra-skill">GIT Knowledge</li>
+            <li class="extra-skill"><%=user.extra_skills[0]%></li>
+            <li class="extra-skill"><%=user.extra_skills[1]%</li>
+            <li class="extra-skill"><%=user.extra_skills[2]%</li>
+            <li class="extra-skill"><%=user.extra_skills[3]%</li>
           </ul>
         </div>
       </aside>
