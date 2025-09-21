@@ -1,12 +1,12 @@
-console.log("Jack Ma maslahatlari");
-const list = [
-  "yaxshi talaba bo'ling", // 0-20
-  "togri boshliq tanlang va ko'proq xato qiling", // 20-30
-  "uzingizga ishlashni boshlang", // 30-40
-  "siz kuchli bo'lgan narsalarni qiling", // 40-50
-  "yoshlarga investitsiya qiling", //50-60
-  "endi dam oling foydasi yoq endi", //60
-];
+// console.log("Jack Ma maslahatlari");
+// const list = [
+//   "yaxshi talaba bo'ling", // 0-20
+//   "togri boshliq tanlang va ko'proq xato qiling", // 20-30
+//   "uzingizga ishlashni boshlang", // 30-40
+//   "siz kuchli bo'lgan narsalarni qiling", // 40-50
+//   "yoshlarga investitsiya qiling", //50-60
+//   "endi dam oling foydasi yoq endi", //60
+// ];
 
 // function maslaxatBering(a, callback) {
 //   if (typeof a !== "number") callback("insert a number", null);
@@ -113,3 +113,20 @@ const list = [
 // console.log(javob);
 // }
 // run();
+
+// A-TASK:
+/* Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
+MASALAN countLetter("e", "engineer") 3ni return qiladi. */
+
+function countLetter(a, b) {
+  let result = [];
+  const arr = b.split("");
+  arr.forEach((element) => {
+    if (element.includes(a)) {
+      result.push(element);
+    }
+  });
+  return result.length;
+}
+
+console.log(countLetter("e", "leo"));
