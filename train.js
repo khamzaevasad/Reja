@@ -119,14 +119,7 @@
 MASALAN countLetter("e", "engineer") 3ni return qiladi. */
 
 function countLetter(a, b) {
-  let result = [];
-  const arr = b.split("");
-  arr.forEach((element) => {
-    if (element.includes(a)) {
-      result.push(element);
-    }
-  });
-  return result.length;
+  const result = b.split("").filter((item) => item === a).length;
+  return result;
 }
-
 console.log(countLetter("e", "leo"));
