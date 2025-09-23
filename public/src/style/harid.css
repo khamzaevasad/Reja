@@ -175,3 +175,51 @@ form {
     padding: 1rem 0;
   }
 }
+.plans-container {
+  width: 100%;
+  max-width: 28rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.plan-list {
+  padding: 12px 22px;
+  background: #fff;
+  border-radius: 1rem;
+  box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 400px;
+  max-width: 100%;
+}
+.plan-subtitle {
+  font-size: 22px;
+  font-weight: normal;
+}
+.delete-btn {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+}
+.edit-btn {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 0.5rem;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn-danger {
+  background-color: #ef4444;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
