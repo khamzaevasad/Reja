@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/src/style/harid.css" />
+    <title>Plan</title>
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+      integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <main>
+      <section class="align-elements">
+        <div class="container">
+          <h1>Reja va maqsadlar</h1>
+          <div class="card">
+            <div class="card-body">
+              <form id="create-form" action="/create-item" method="POST">
+                <div class="form-control">
+                  <input
+                    id="create-file"
+                    name="item"
+                    autocomplete="off"
+                    type="text"
+                    placeholder="ex: NodeJS..."
+                    class="input input-primary"
+                    required
+                  />
+                </div>
+
+                <div class="form-control">
+                  <button type="submit" class="btn btn-primary">
+                    Qo'shish
+                  </button>
+                </div>
+              </form>
+            </div>
+          </div>
+
+          <!-- plans -->
+          <div class="plans-container hidden">
+            <div class="plan-list">
+              <p class="plan-subtitle">Node.js</p>
+              <div>
+                <button class="btn-primary edit-btn">
+                  <i class="fa-solid fa-pen fa-xs" style="color: #ffffff"></i>
+                </button>
+                <button class="delete-btn btn-primary">O'chirish</button>
+              </div>
+            </div>
+            <div class="plan-list">
+              <p class="plan-subtitle">Node.js</p>
+              <div>
+                <button class="btn-primary edit-btn">
+                  <i class="fa-solid fa-pen fa-xs" style="color: #ffffff"></i>
+                </button>
+                <button class="delete-btn btn-primary">O'chirish</button>
+              </div>
+            </div>
+          </div>
+          <button class="btn-danger btn">Barchasini o'chirish</button>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
