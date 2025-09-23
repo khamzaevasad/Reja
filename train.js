@@ -118,8 +118,25 @@
 /* Shunday 2 parametrli function tuzing, hamda birinchi parametrdagi letterni ikkinchi parametrdagi sozdan qatnashga sonini return qilishi kerak boladi.
 MASALAN countLetter("e", "engineer") 3ni return qiladi. */
 
-function countLetter(a, b) {
-  const result = b.split("").filter((item) => item === a).length;
-  return result;
+// function countLetter(a, b) {
+//   const result = b.split("").filter((item) => item === a).length;
+//   return result;
+// }
+// console.log(countLetter("e", "leo"));
+
+// B-TASK:
+/*
+Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
+MASALAN countDigits("ad2a54y79wet0sfgb9") return 7 
+*/
+
+function countDigits(str) {
+  let count = 0;
+  for (char of str) {
+    if (char >= "0" && char <= "9") {
+      count++;
+    }
+  }
+  return count;
 }
-console.log(countLetter("e", "leo"));
+console.log(countDigits("ad2a54y79wet0sfgb9"));
