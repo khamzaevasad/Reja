@@ -44,27 +44,24 @@
           </div>
 
           <!-- plans -->
-          <div class="plans-container hidden">
+          <div class="plans-container">
+            <% items.map(function(item) { %>
             <div class="plan-list">
-              <p class="plan-subtitle">Node.js</p>
+              <p class="plan-subtitle"><%=item.reja%></p>
               <div>
-                <button class="btn-primary edit-btn">
+                <button data-id="<%=item._id%>" class="btn-primary edit-btn">
                   <i class="fa-solid fa-pen fa-xs" style="color: #ffffff"></i>
                 </button>
-                <button class="delete-btn btn-primary">O'chirish</button>
-              </div>
-            </div>
-            <div class="plan-list">
-              <p class="plan-subtitle">Node.js</p>
-              <div>
-                <button class="btn-primary edit-btn">
-                  <i class="fa-solid fa-pen fa-xs" style="color: #ffffff"></i>
+                <button data-id="<%=item._id%>" class="delete-btn btn-primary">
+                  O'chirish
                 </button>
-                <button class="delete-btn btn-primary">O'chirish</button>
               </div>
             </div>
+            <% })%>
           </div>
-          <button class="btn-danger btn">Barchasini o'chirish</button>
+          <button class="delete-btn btn btn-danger">
+            Barchasini o'chirish
+          </button>
         </div>
       </section>
     </main>
