@@ -31,12 +31,8 @@ app.post("/create-item", (req, res) => {
   console.log("user intered /create-item");
   const newReja = req.body.reja;
   db.collection("plans").insertOne({ reja: newReja }, (err, data) => {
-    if (err) {
-      console.log(err);
-      res.end("something went wrong");
-    } else {
-      res.end("successfuly added");
-    }
+    console.log(data.ops[0]);
+    res.json(data.ops[0]);
   });
 });
 
@@ -55,7 +51,6 @@ app.get("/", function (req, res) {
 });
 
 // Author page
-
 app.get("/author", function (req, res) {
   res.render("author", { user: user });
 });
