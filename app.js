@@ -5,6 +5,7 @@ const app = express();
 
 // MongoDB connect
 const db = require("./server").db();
+const mongodb = require("mongodb");
 
 let user;
 fs.readFile("database/user.json", "utf-8", (err, data) => {
@@ -27,6 +28,7 @@ app.set("views", "views");
 app.set("view engine", "ejs");
 
 // 4: routing code
+// create
 app.post("/create-item", (req, res) => {
   console.log("user intered /create-item");
   const newReja = req.body.reja;
@@ -35,7 +37,18 @@ app.post("/create-item", (req, res) => {
     res.json(data.ops[0]);
   });
 });
-
+// delete
+app.post("/delete-item", (req, res) => {
+  const id = req.body.id;
+  console.log(id);
+  db.collection("plans").deleteOne(
+    { _id: new mongodb.ObjectId(id) },
+    function (err, data) {
+      res.json({ state: "success" });
+    }
+  );
+});
+// read
 app.get("/", function (req, res) {
   console.log("user intered /");
   db.collection("plans")

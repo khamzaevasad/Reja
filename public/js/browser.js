@@ -2,6 +2,8 @@ const form = document.getElementById("create-form");
 const inputEl = document.getElementById("create-file");
 // const plansCon = document.querySelector(".plans-container");
 
+// delete btn toggle
+
 function itemTemplate(item) {
   return `
     <div class="plan-list">
@@ -36,4 +38,22 @@ form.addEventListener("submit", (e) => {
       alert("Something went wrong");
       console.log("Something went wrong", err);
     });
+});
+
+// delete
+document.addEventListener("click", (e) => {
+  if (e.target.classList.contains("list-delete")) {
+    if (confirm("Aniq o'chirmoqchimisiz?")) {
+      axios
+        .post("delete-item", { id: e.target.getAttribute("data-id") })
+        .then((res) => {
+          console.log(res.data);
+          e.target.parentElement.parentElement.remove();
+        })
+        .catch((err) => {
+          alert("Something went wrong");
+          console.log("Something went wrong", err);
+        });
+    }
+  }
 });
