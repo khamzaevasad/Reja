@@ -130,13 +130,25 @@ Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda
 MASALAN countDigits("ad2a54y79wet0sfgb9") return 7 
 */
 
-function countDigits(str) {
-  let count = 0;
-  for (char of str) {
-    if (char >= "0" && char <= "9") {
-      count++;
-    }
-  }
-  return count;
+// function countDigits(str) {
+//   let count = 0;
+//   for (char of str) {
+//     if (char >= "0" && char <= "9") {
+//       count++;
+//     }
+//   }
+//   return count;
+// }
+// console.log(countDigits("ad2a54y79wet0sfgb9"));
+
+// C-TASK:
+/*
+Shunday function tuzing, u 2ta string parametr ega bolsin, hamda agar har ikkala string bir hil harflardan iborat bolsa true aks holda false qaytarsin
+MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
+*/
+
+function checkContent(str1, str2) {
+  return str1.split("").sort().join() === str2.split("").sort().join();
 }
-console.log(countDigits("ad2a54y79wet0sfgb9"));
+
+console.log(checkContent("mitgroup", "gmtiprou"));
