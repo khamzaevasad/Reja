@@ -99,7 +99,7 @@ form {
   color: #9ca3af;
 }
 .input:invalid {
-  border-color: #ef4444;
+  border-color: gray;
 }
 .input:invalid:focus {
   border-color: #ef4444;
