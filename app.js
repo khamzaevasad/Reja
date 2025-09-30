@@ -48,6 +48,28 @@ app.post("/delete-item", (req, res) => {
     }
   );
 });
+
+// edit
+app.post("/edit-item", (req, res) => {
+  const data = req.body;
+  db.collection("plans").findOneAndUpdate(
+    { _id: new mongodb.ObjectId(data.id) },
+    { $set: { reja: data.new_input } },
+    (err, data) => {
+      res.json({ state: "success" });
+    }
+  );
+  // res.end("done!");
+});
+
+// deleteall
+app.post("/delete-all", (req, res) => {
+  if (req.body.delete_all) {
+    db.collection("plans").deleteMany(() => {
+      res.json({ state: `hamma rejalar o'chirildi` });
+    });
+  }
+});
 // read
 app.get("/", function (req, res) {
   console.log("user intered /");
