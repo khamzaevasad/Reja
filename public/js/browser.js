@@ -83,7 +83,7 @@ document.addEventListener("click", (e) => {
   }
 });
 
-document.querySelector("/delete-all").addEventListener("click", () => {
+document.querySelector(".delete-all").addEventListener("click", () => {
   axios
     .post("/delete-all", { delete_all: true })
     .then((response) => {

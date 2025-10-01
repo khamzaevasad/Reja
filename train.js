@@ -124,6 +124,8 @@ MASALAN countLetter("e", "engineer") 3ni return qiladi. */
 // }
 // console.log(countLetter("e", "leo"));
 
+
+
 // B-TASK:
 /*
 Shunday function tuzing, u 1ta string parametrga ega bolsin, hamda osha stringda qatnashgan raqamlarni sonini bizga return qilsin.
@@ -152,6 +154,7 @@ MASALAN checkContent("mitgroup", "gmtiprou") return qiladi true;
 // }
 
 // console.log(checkContent("mitgroup", "gmtiprou"));
+
 
 // D-TASK:
 /*
