@@ -186,8 +186,8 @@ MASALAN: const shop = new Shop(4, 5, 2); shop.qoldiq() return hozir 20:40da 4ta 
 // E-TASK:
 /*
 Shunday function tuzing, u bitta string argumentni qabul qilib osha stringni teskari qilib return qilsin.
-MASALAN: getReverse("hello") return qilsin "olleh"
-*/
+MASALAN: getReverse("leo") return qilsin "oel"
+ */
 
 function getReverse(str) {
   return str.split("").reverse().join("");
