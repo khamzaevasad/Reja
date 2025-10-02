@@ -5,22 +5,17 @@ const inputEl = document.getElementById("create-file");
 // delete btn toggle
 
 function itemTemplate(item) {
-  return `
-    <div class="plan-list">
+  return `<div class="plan-list">
               <p class="plan-subtitle">${item.reja}</p>
               <div>
                 <button data-id="${item._id}" class="btn-primary edit-btn">
                   <i class="fa-solid fa-pen fa-xs" style="color: #ffffff"></i>
                 </button>
-                <button data-id="${item._id}" class="delete-btn btn-primary">
+                <button data-id="${item._id}" class="list-delete delete-btn btn-primary">
                   O'chirish
                 </button>
               </div>
-            </div>
-    
-    
-    
-    `;
+            </div>`;
 }
 
 form.addEventListener("submit", (e) => {
