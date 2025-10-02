@@ -35,16 +35,16 @@
 
 ### Backend Technologies
 
-- **[Node.js](https://nodejs.org/)** - JavaScript runtime muhiti
-- **[Express.js](https://expressjs.com/)** - Web framework
-- **[MongoDB](https://mongodb.com/)** - NoSQL ma'lumotlar bazasi
-- **[EJS](https://ejs.co/)** - Template engine
+- **[Node.js](https://nodejs.org/)** - JavaScript runtime environment  
+- **[Express.js](https://expressjs.com/)** - Web framework  
+- **[MongoDB](https://mongodb.com/)** - NoSQL database  
+- **[EJS](https://ejs.co/)** - Template engine  
 
 ### Frontend & Styling
 
-- **[CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)** - Zamonaviy stillar
-- **[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** - Dinamik funksionallik
-- **[Responsive Design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)** - Moslashuvchan dizayn
+- **[CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS)** - Modern styling  
+- **[JavaScript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)** - Dynamic functionality  
+- **[Responsive Design](https://developer.mozilla.org/en-US/docs/Learn/CSS/CSS_layout/Responsive_Design)** - Adaptive design  
 
 ### Tools & Libraries
 
@@ -95,14 +95,6 @@
 - **Smooth Scrolling** - Fluid page navigation
 - **Progress Animations** - Animated skill level indicators
 
-## 📞 Contact Information
-
-Get in touch through the portfolio:
-
-- **Location** - South Korea, Busan
-- **Age** - 20 years old
-- **Freelance** - Available
-- **Languages** - Uzbek (100%), Korean (80%), English (60%)
 
 ## 🤝 Contributing
 
@@ -126,5 +118,5 @@ To contribute to this project:
 
 <div align="center">
   <p>Made with  by KhamzaevAsad</p>
-  <p>© 2025 Steve Portfolio. All rights reserved.</p>
+  <p>© All rights reserved.</p>
 </div>
